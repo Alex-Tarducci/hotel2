@@ -40,6 +40,14 @@
             this.chk_n1 = new System.Windows.Forms.CheckBox();
             this.lbl_n7 = new System.Windows.Forms.Label();
             this.lbl_n8 = new System.Windows.Forms.Label();
+            this.lbl_n9 = new System.Windows.Forms.Label();
+            this.btn_n1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_n1
@@ -158,7 +166,7 @@
             this.lbl_n7.AutoSize = true;
             this.lbl_n7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_n7.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_n7.Location = new System.Drawing.Point(23, 351);
+            this.lbl_n7.Location = new System.Drawing.Point(23, 331);
             this.lbl_n7.Name = "lbl_n7";
             this.lbl_n7.Size = new System.Drawing.Size(57, 15);
             this.lbl_n7.TabIndex = 12;
@@ -170,17 +178,66 @@
             this.lbl_n8.BackColor = System.Drawing.Color.White;
             this.lbl_n8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_n8.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_n8.Location = new System.Drawing.Point(26, 405);
+            this.lbl_n8.Location = new System.Drawing.Point(23, 365);
             this.lbl_n8.Name = "lbl_n8";
             this.lbl_n8.Size = new System.Drawing.Size(83, 15);
             this.lbl_n8.TabIndex = 13;
             this.lbl_n8.Text = "Costo totale";
+            // 
+            // lbl_n9
+            // 
+            this.lbl_n9.AutoSize = true;
+            this.lbl_n9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n9.Location = new System.Drawing.Point(26, 404);
+            this.lbl_n9.Name = "lbl_n9";
+            this.lbl_n9.Size = new System.Drawing.Size(238, 15);
+            this.lbl_n9.TabIndex = 14;
+            this.lbl_n9.Text = "Clicca qui per informazioni sul hotel";
+            // 
+            // btn_n1
+            // 
+            this.btn_n1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_n1.Location = new System.Drawing.Point(270, 400);
+            this.btn_n1.Name = "btn_n1";
+            this.btn_n1.Size = new System.Drawing.Size(124, 23);
+            this.btn_n1.TabIndex = 15;
+            this.btn_n1.Text = " Informazioni";
+            this.btn_n1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(585, 115);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(523, 195);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(365, 330);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btn_n1);
+            this.Controls.Add(this.lbl_n9);
             this.Controls.Add(this.lbl_n8);
             this.Controls.Add(this.lbl_n7);
             this.Controls.Add(this.chk_n1);
@@ -195,6 +252,9 @@
             this.Controls.Add(this.lbl_n2);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,6 +274,11 @@
         private System.Windows.Forms.CheckBox chk_n1;
         private System.Windows.Forms.Label lbl_n7;
         private System.Windows.Forms.Label lbl_n8;
+        private System.Windows.Forms.Label lbl_n9;
+        private System.Windows.Forms.Button btn_n1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 
