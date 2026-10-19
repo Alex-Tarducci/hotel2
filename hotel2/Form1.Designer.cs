@@ -33,18 +33,18 @@
             this.lbl_n3 = new System.Windows.Forms.Label();
             this.cmb_n1 = new System.Windows.Forms.ComboBox();
             this.lbl_n4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmb_n2 = new System.Windows.Forms.ComboBox();
             this.lbl_n5 = new System.Windows.Forms.Label();
             this.lbl_n6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.chk_n1 = new System.Windows.Forms.CheckBox();
             this.lbl_n7 = new System.Windows.Forms.Label();
             this.lbl_n8 = new System.Windows.Forms.Label();
-            this.lbl_n9 = new System.Windows.Forms.Label();
             this.btn_n1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -106,20 +106,20 @@
             this.lbl_n4.TabIndex = 4;
             this.lbl_n4.Text = "Clicca qui per scegliere il tipo di stanza";
             // 
-            // comboBox1
+            // cmb_n2
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.Blue;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmb_n2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_n2.ForeColor = System.Drawing.Color.Blue;
+            this.cmb_n2.FormattingEnabled = true;
+            this.cmb_n2.Items.AddRange(new object[] {
             "Base",
             "Media",
             "Alta"});
-            this.comboBox1.Location = new System.Drawing.Point(301, 175);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(142, 23);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.Text = "seleziona camera";
+            this.cmb_n2.Location = new System.Drawing.Point(301, 175);
+            this.cmb_n2.Name = "cmb_n2";
+            this.cmb_n2.Size = new System.Drawing.Size(142, 23);
+            this.cmb_n2.TabIndex = 5;
+            this.cmb_n2.Text = "seleziona camera";
             // 
             // lbl_n5
             // 
@@ -164,35 +164,24 @@
             // lbl_n7
             // 
             this.lbl_n7.AutoSize = true;
+            this.lbl_n7.BackColor = System.Drawing.Color.White;
             this.lbl_n7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_n7.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_n7.Location = new System.Drawing.Point(23, 331);
+            this.lbl_n7.Location = new System.Drawing.Point(23, 365);
             this.lbl_n7.Name = "lbl_n7";
-            this.lbl_n7.Size = new System.Drawing.Size(57, 15);
-            this.lbl_n7.TabIndex = 12;
-            this.lbl_n7.Text = "Prenota";
+            this.lbl_n7.Size = new System.Drawing.Size(83, 15);
+            this.lbl_n7.TabIndex = 13;
+            this.lbl_n7.Text = "Costo totale";
             // 
             // lbl_n8
             // 
             this.lbl_n8.AutoSize = true;
-            this.lbl_n8.BackColor = System.Drawing.Color.White;
             this.lbl_n8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_n8.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_n8.Location = new System.Drawing.Point(23, 365);
+            this.lbl_n8.Location = new System.Drawing.Point(26, 404);
             this.lbl_n8.Name = "lbl_n8";
-            this.lbl_n8.Size = new System.Drawing.Size(83, 15);
-            this.lbl_n8.TabIndex = 13;
-            this.lbl_n8.Text = "Costo totale";
-            // 
-            // lbl_n9
-            // 
-            this.lbl_n9.AutoSize = true;
-            this.lbl_n9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_n9.Location = new System.Drawing.Point(26, 404);
-            this.lbl_n9.Name = "lbl_n9";
-            this.lbl_n9.Size = new System.Drawing.Size(238, 15);
-            this.lbl_n9.TabIndex = 14;
-            this.lbl_n9.Text = "Clicca qui per informazioni sul hotel";
+            this.lbl_n8.Size = new System.Drawing.Size(238, 15);
+            this.lbl_n8.TabIndex = 14;
+            this.lbl_n8.Text = "Clicca qui per informazioni sul hotel";
             // 
             // btn_n1
             // 
@@ -222,29 +211,41 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(365, 330);
+            this.pictureBox3.Location = new System.Drawing.Point(379, 330);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 50);
             this.pictureBox3.TabIndex = 18;
             this.pictureBox3.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Blue;
+            this.button1.Location = new System.Drawing.Point(26, 330);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Preonta";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_n1);
-            this.Controls.Add(this.lbl_n9);
             this.Controls.Add(this.lbl_n8);
             this.Controls.Add(this.lbl_n7);
             this.Controls.Add(this.chk_n1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lbl_n6);
             this.Controls.Add(this.lbl_n5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmb_n2);
             this.Controls.Add(this.lbl_n4);
             this.Controls.Add(this.cmb_n1);
             this.Controls.Add(this.lbl_n1);
@@ -267,18 +268,18 @@
         private System.Windows.Forms.Label lbl_n3;
         private System.Windows.Forms.ComboBox cmb_n1;
         private System.Windows.Forms.Label lbl_n4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmb_n2;
         private System.Windows.Forms.Label lbl_n5;
         private System.Windows.Forms.Label lbl_n6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox chk_n1;
         private System.Windows.Forms.Label lbl_n7;
         private System.Windows.Forms.Label lbl_n8;
-        private System.Windows.Forms.Label lbl_n9;
         private System.Windows.Forms.Button btn_n1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button1;
     }
 }
 

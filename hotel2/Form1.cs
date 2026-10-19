@@ -16,5 +16,21 @@ namespace hotel2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (cmb_n1.SelectedItem == null || cmb_n2.SelectedItem == null)
+            {
+                MessageBox.Show("è sbagliato,riprova");
+                return;
+            }
+            else
+            {
+                int Ngiorni, stanze, costogiornaliero, stagioni, parcheggio;
+
+            } 
+
+
+        }
     }
 }
