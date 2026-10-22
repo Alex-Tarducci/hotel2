@@ -29,7 +29,7 @@ namespace hotel2
                 int Ngiorni;
                 string stanze = cmb_n1.Text, stagioni = cmb_n2.Text;
                 bool parcheggio = chk_n1.Checked;
-                double costogiornaliero = 0, sconto1 = 0.75, sconto2 = 0.65;
+                double costogiornaliero = 0, sconto1 = 0.75, sconto2 = 0.65, costostanza = 0;
 
                 if (!int.TryParse(txt_n1.Text, out Ngiorni) || Ngiorni <= 0)
                 {
@@ -83,7 +83,23 @@ namespace hotel2
                         costogiornaliero = 55;
                     }
                 }
-
+                if(Ngiorni<=2)
+                {
+                    costostanza = Ngiorni * costogiornaliero;
+                }
+                else if(Ngiorni <= 7)
+                {
+                    double primi2giorni = 2 * costogiornaliero;
+                    double giornirimasti = (Ngiorni - 2) * (costogiornaliero * sconto1);
+                    costostanza = primi2giorni + giornirimasti;
+                }
+                else
+                {
+                    double primi2giorni = 2 * costogiornaliero;
+                    double successivi5giorni = 5 * (costogiornaliero * sconto1);
+                    double oltre7giorni = (primi2giorni - 7) * (costogiornaliero * sconto2);
+                    costostanza = primi2giorni + successivi5giorni + oltre7giorni;
+                }
 
 
             }
