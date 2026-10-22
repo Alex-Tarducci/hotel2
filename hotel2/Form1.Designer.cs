@@ -36,7 +36,7 @@
             this.cmb_n2 = new System.Windows.Forms.ComboBox();
             this.lbl_n5 = new System.Windows.Forms.Label();
             this.lbl_n6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_n1 = new System.Windows.Forms.TextBox();
             this.chk_n1 = new System.Windows.Forms.CheckBox();
             this.lbl_n7 = new System.Windows.Forms.Label();
             this.lbl_n8 = new System.Windows.Forms.Label();
@@ -142,12 +142,12 @@
             this.lbl_n6.TabIndex = 8;
             this.lbl_n6.Text = "Vuoi il parcheggio?";
             // 
-            // textBox1
+            // txt_n1
             // 
-            this.textBox1.Location = new System.Drawing.Point(350, 225);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 10;
+            this.txt_n1.Location = new System.Drawing.Point(350, 225);
+            this.txt_n1.Name = "txt_n1";
+            this.txt_n1.Size = new System.Drawing.Size(100, 20);
+            this.txt_n1.TabIndex = 10;
             // 
             // chk_n1
             // 
@@ -242,7 +242,7 @@
             this.Controls.Add(this.lbl_n8);
             this.Controls.Add(this.lbl_n7);
             this.Controls.Add(this.chk_n1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_n1);
             this.Controls.Add(this.lbl_n6);
             this.Controls.Add(this.lbl_n5);
             this.Controls.Add(this.cmb_n2);
@@ -271,7 +271,7 @@
         private System.Windows.Forms.ComboBox cmb_n2;
         private System.Windows.Forms.Label lbl_n5;
         private System.Windows.Forms.Label lbl_n6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_n1;
         private System.Windows.Forms.CheckBox chk_n1;
         private System.Windows.Forms.Label lbl_n7;
         private System.Windows.Forms.Label lbl_n8;

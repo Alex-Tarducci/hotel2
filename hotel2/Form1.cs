@@ -26,11 +26,66 @@ namespace hotel2
             }
             else
             {
-                int Ngiorni, stanze, costogiornaliero, stagioni, parcheggio;
+                int Ngiorni;
+                string stanze = cmb_n1.Text, stagioni = cmb_n2.Text;
+                bool parcheggio = chk_n1.Checked;
+                double costogiornaliero = 0, sconto1 = 0.75, sconto2 = 0.65;
 
-            } 
+                if (!int.TryParse(txt_n1.Text, out Ngiorni) || Ngiorni <= 0)
+                {
+                    MessageBox.Show("inserisci un numero valido)(maggiore di 0).", "input non valido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                
+
+                if(stanze == "base")
+                {
+                    if(stagioni =="Bassa Stagione")
+                    {
+                        costogiornaliero = 15;
+                    }
+                    else if(stagioni =="media stagione")
+                    {
+                        costogiornaliero = 20;
+                    }
+                    else if(stagioni == "alta stagione")
+                    {
+                        costogiornaliero = 25;
+                    }
+                }
+                else if(stanze == "media")
+                {
+                    if(stagioni =="bassa stagione")
+                    {
+                        costogiornaliero = 30;
+                    }
+                    else if (stagioni == "media stagione")
+                    {
+                        costogiornaliero = 35;
+                    }
+                    else if (stagioni == "alta stagione")
+                    {
+                        costogiornaliero = 40;
+                    }
+                }
+                else if (stanze == "alta")
+                {
+                    if (stagioni == "bassa stagione")
+                    {
+                        costogiornaliero = 45;
+                    }
+                    else if (stagioni == "media stagione")
+                    {
+                        costogiornaliero = 50;
+                    }
+                    else if (stagioni == "alta stagione")
+                    {
+                        costogiornaliero = 55;
+                    }
+                }
 
 
-        }
+
+            }
     }
 }
