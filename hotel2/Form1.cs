@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,26 +37,26 @@ namespace hotel2
                     MessageBox.Show("inserisci un numero valido)(maggiore di 0).", "input non valido", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                
 
-                if(stanze == "base")
+
+                if (stanze == "base")
                 {
-                    if(stagioni =="Bassa Stagione")
+                    if (stagioni == "Bassa Stagione")
                     {
                         costogiornaliero = 15;
                     }
-                    else if(stagioni =="media stagione")
+                    else if (stagioni == "media stagione")
                     {
                         costogiornaliero = 20;
                     }
-                    else if(stagioni == "alta stagione")
+                    else if (stagioni == "alta stagione")
                     {
                         costogiornaliero = 25;
                     }
                 }
-                else if(stanze == "media")
+                else if (stanze == "media")
                 {
-                    if(stagioni =="bassa stagione")
+                    if (stagioni == "bassa stagione")
                     {
                         costogiornaliero = 30;
                     }
@@ -83,11 +84,11 @@ namespace hotel2
                         costogiornaliero = 55;
                     }
                 }
-                if(Ngiorni<=2)
+                if (Ngiorni <= 2)
                 {
                     costostanza = Ngiorni * costogiornaliero;
                 }
-                else if(Ngiorni <= 7)
+                else if (Ngiorni <= 7)
                 {
                     double primi2giorni = 2 * costogiornaliero;
                     double giornirimasti = (Ngiorni - 2) * (costogiornaliero * sconto1);
@@ -101,7 +102,22 @@ namespace hotel2
                     costostanza = primi2giorni + successivi5giorni + oltre7giorni;
                 }
 
+                double costoparcheggio = 0;
+                if (parcheggio)
+                {
+                    costoparcheggio = Ngiorni * 5;
+                }
 
+                double totale = costostanza + costoparcheggio;
+
+                MessageBox.Show("costo totale del soggiorno:" + totale + "€");
+
+                MessageBox.Show("grazie,a presto");
+                Application.Exit();
             }
+
+
+
+        }
     }
 }
