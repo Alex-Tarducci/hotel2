@@ -124,5 +124,10 @@ namespace hotel2
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ciao,benvenuto se vuoi una stanza base è la nostra scelta più economica e ti offre un esperienza inferiore, ma comunque ottima mentre la media non include proprio tutto ma già una buona parte delle aggiunte mentre la alta ti da il massimo dei vantaggi");
+        }
     }
 }
