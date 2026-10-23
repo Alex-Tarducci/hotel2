@@ -28,7 +28,7 @@ namespace hotel2
             else
             {
                 int Ngiorni;
-                string stanze = cmb_n1.Text, stagioni = cmb_n2.Text;
+                string stanze = cmb_n2.Text, stagioni = cmb_n1.Text;
                 bool parcheggio = chk_n1.Checked;
                 double costogiornaliero = 0, sconto1 = 0.75, sconto2 = 0.65, costostanza = 0;
 
@@ -39,47 +39,47 @@ namespace hotel2
                 }
 
 
-                if (stanze == "base")
+                if (stanze == "Base")
                 {
                     if (stagioni == "Bassa Stagione")
                     {
                         costogiornaliero = 15;
                     }
-                    else if (stagioni == "media stagione")
+                    else if (stagioni == "Media stagione")
                     {
                         costogiornaliero = 20;
                     }
-                    else if (stagioni == "alta stagione")
+                    else if (stagioni == "Alta stagione")
                     {
                         costogiornaliero = 25;
                     }
                 }
-                else if (stanze == "media")
+                else if (stanze == "Media")
                 {
-                    if (stagioni == "bassa stagione")
+                    if (stagioni == "Bassa stagione")
                     {
                         costogiornaliero = 30;
                     }
-                    else if (stagioni == "media stagione")
+                    else if (stagioni == "Media stagione")
                     {
                         costogiornaliero = 35;
                     }
-                    else if (stagioni == "alta stagione")
+                    else if (stagioni == "Alta stagione")
                     {
                         costogiornaliero = 40;
                     }
                 }
-                else if (stanze == "alta")
+                else if (stanze == "Alta")
                 {
-                    if (stagioni == "bassa stagione")
+                    if (stagioni == "Bassa stagione")
                     {
                         costogiornaliero = 45;
                     }
-                    else if (stagioni == "media stagione")
+                    else if (stagioni == "Media stagione")
                     {
                         costogiornaliero = 50;
                     }
-                    else if (stagioni == "alta stagione")
+                    else if (stagioni == "Alta stagione")
                     {
                         costogiornaliero = 55;
                     }
@@ -117,6 +117,11 @@ namespace hotel2
             }
 
 
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
 
         }
     }
